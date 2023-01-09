@@ -1,0 +1,294 @@
+#Exercício 1:
+#Faça um Programa que peça dois números e imprima o maior deles
+
+'''n1 = float(input("Número 1: "))
+n2 = float(input("Número 2: "))
+if n1 > n2:
+    print(n1)
+else:
+  print(n2)'''
+
+
+#Excercício 2:
+#Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo
+
+'''n = float(input("Digite um número: "))
+if n > 0:
+  print("Positivo")
+else:
+  print("Negativo")'''
+
+
+#Exercício 3:
+#Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido
+
+'''letra = input("Digite M ou F: ")
+if letra == "M" or letra == "m":
+  print("Masculino")
+elif letra == "F" or letra == "f":
+  print("Feminino")
+else:
+  print("Desconhecido")'''
+
+
+#Exercício 4
+#Faça um Programa que verifique se uma letra digitada é vogal ou consoante
+'''letra = input("Digite uma letra: ")
+if letra != "a" and letra != "e" and letra != "i" and letra != "o" and letra != "u":
+  print("Consoante")
+else:
+  print("Vogal")'''
+
+
+#Exercício 5:
+#Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+
+#A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+
+#A mensagem "Reprovado", se a média for menor do que sete;
+
+#A mensagem "Aprovado com Distinção", se a média for igual a dez
+
+'''n1 = float(input("Nota 1: "))
+n2 = float(input("Nota 2: "))
+media = (n1 + n2)/2
+if media == 10:
+  print("Aprovado com distinção")
+elif media >= 7:
+  print("Aprovado")
+elif media < 7:
+  print("Reprovado")'''
+
+
+#Exercício 6:
+#Faça um Programa que leia três números e mostre o maior deles
+'''n1 = int(input("N1: "))
+n2 = int(input("N2: "))
+n3 = int(input("N3: "))
+if n1 > n2:
+  if n1>n3:
+    print(n1)
+  else:
+    print(n3)
+elif n2 > n3:
+  print(n2)
+else:
+  print(n3)'''
+
+
+#Exercício 7:
+#Faça um Programa que leia três números e mostre o maior e o menor deles
+
+'''n1 = int(input("N1: "))
+n2 = int(input("N2: "))
+n3 = int(input("N3: "))
+if n1 > n2:
+  if n1>n3:
+    print(n1)
+  else:
+    print(n3)
+elif n2 > n3:
+  print(n2)
+else:
+  print(n3)'''
+
+#Exercício 8: 
+#Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato
+'''prod_1 = float(input("Preço 1: "))
+prod_2 = float(input("Preço 2: "))
+prod_3 = float(input("Preço 3: "))
+if prod_1 < prod_2:
+  if prod_1 < prod_3:
+    print(prod_1)
+  else:
+    print(prod_3)
+elif prod_2 < prod_3:
+  print(prod_2)
+else:
+  print(prod_3)'''
+
+#Exercício 9: 
+#Faça um Programa que leia três números e mostre-os em ordem decrescente
+'''n1 = int(input("N1: "))
+n2 = int(input("N2: "))
+n3 = int(input("N3: "))
+if n1 > n2:
+  if n1 > n3 and n2 > n3:
+    print(n1, n2, n3)
+  else:
+    print(n3, n1, n2)
+elif n2 > n3 and n1 > n3:
+  print(n2, n1, n3)
+else:
+  print(n3, n2, n1)'''
+
+#Exercício 10: 
+#Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso
+'''turno  = input("Qual turno vc estuda? (Responda com M = Matutino; V = Vespertino; N = Noturno). ")
+if turno == "M":
+  print("Bom dia!")
+elif turno == "V":
+  print("Boa tarde!")
+elif turno == "N":
+  print("Boa noite!")
+else:
+  print("inválido")'''
+
+#Exercício 11: 
+#As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contrataram para desenvolver o programa que calculará os reajustes.
+
+#Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:
+
+#salários até R$ 280,00 (incluindo) : aumento de 20%
+
+#salários entre R$ 280,00 e R$ 700,00 : aumento de 15%
+
+#salários entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+
+#salários de R$ 1500,00 em diante : aumento de 5% 
+
+#Após o aumento ser realizado, informe na tela:
+
+#o salário antes do reajuste;
+#o percentual de aumento aplicado;
+#o valor do aumento;
+#o novo salário, após o aumento.
+
+'''salario_atual = float(input("Salário atual: "))
+aumento = 0
+if salario_atual <= 280:
+  aumento = salario_atual * 0.2
+  print("Pré reajuste: ",salario_atual, "Percentual de aumento: 20%", "Valor do aumento: ", aumento, "Novo salário: ", salario_atual + aumento)
+
+elif salario_atual > 280 and salario_atual < 700:
+  aumento = salario_atual * 0.15
+  print("Pré reajuste: ",salario_atual, "Percentual de aumento: 15%", "Valor do aumento: ", aumento, "Novo salário: ", salario_atual + aumento)
+
+elif salario_atual > 700 and salario_atual <= 1500:
+  aumento = salario_atual * 0.1
+  print("Pré reajuste: ",salario_atual, "Percentual de aumento: 10%", "Valor do aumento: ", aumento, "Novo salário: ", salario_atual + aumento)
+
+elif salario_atual > 1500:
+  aumento = salario_atual * 0.05
+  print("Pré reajuste: ",salario_atual, "Percentual de aumento: 5%", "Valor do aumento: ", aumento, "Novo salário: ", salario_atual + aumento)'''
+
+
+#Exercício 12:
+#Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.
+#Desconto do IR:
+#Salário Bruto até 900 (inclusive) - isento
+#Salário Bruto até 1500 (inclusive) - desconto de 5%
+#Salário Bruto até 2500 (inclusive) - desconto de 10%
+#Salário Bruto acima de 2500 - desconto de 20% 
+#Imprima na tela as informações
+
+'''salario_hora  = float(input("Quanto vc ganha por hora?: "))
+horas_mês = int(input("Quantas horas vc trabalha por mês?: "))
+bruto = horas_mês*salario_hora
+sindicato = bruto * 0.03
+fgts = bruto * 0.11
+imposto_renda = 0
+if bruto <= 900:
+  print(bruto, "Sindicato: ", sindicato, "FGTS: " , fgts , "Líquido: " , bruto - sindicato)
+elif bruto <= 1500:
+  imposto_renda = bruto * 0.05
+  print("Bruto: ", bruto, "Imposto de renda: ", imposto_renda, "Sindicato: ", sindicato, "FGTS: ", fgts, "Líquido: ", bruto - imposto_renda - sindicato)
+elif bruto <= 2500:
+  imposto_renda = bruto * 0.1
+  print("Bruto: ", bruto, "Imposto de renda: ", imposto_renda, "Sindicato: ", sindicato, "FGTS: ", fgts, "Líquido: ", bruto - imposto_renda - sindicato)
+elif bruto > 2500:
+  imposto_renda = bruto * 0.2
+  print("Bruto: ", bruto, "Imposto de renda: ", imposto_renda, "Sindicato: ", sindicato, "FGTS: ", fgts, "Líquido: ", bruto - imposto_renda - sindicato)'''
+
+#Exercício 13:
+#Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.
+'''n = int(input("N: "))
+if n == 1:
+  print("Domingo")
+elif n == 2:
+  print("Segunda")
+elif n == 3:
+  print("Terça")
+elif n == 4:
+  print("Quarta")
+elif n == 5:
+  print("Quinta")
+elif n == 6:
+  print("Sexta")
+elif n == 7:
+  print("Sábado")'''
+
+
+
+#Exercício 14:
+#Coisa de velho
+
+
+
+#Exercício 15:
+#Faça um Programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
+#Dicas:
+#Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;
+#Triângulo Equilátero: três lados iguais;
+#Triângulo Isósceles: quaisquer dois lados iguais;
+#Triângulo Escaleno: três lados diferentes;
+'''a = float(input("Lado A: "))
+b = float(input("Lado B: "))
+c = float(input("Lado C: "))
+if a+b>c or b+c>a or a+c>b:
+  if a == b == c:
+    print("Equilátero")
+  elif a==b != c or a==c != b or b==c != a:
+    print("Isóceles")
+  elif a!=b!=c:
+    print("Escaleno")
+else:
+  print("Não pode ser um triângulo")'''
+
+
+#Exercício 16:
+#Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + c. O programa deverá pedir os valores de a, b e c e fazer as consistências, informando ao usuário nas seguintes situações:
+#Se o usuário informar o valor de A igual a zero, a equação não é do segundo grau e o programa não deve fazer pedir os demais valores, sendo encerrado;
+#Se o delta calculado for negativo, a equação não possui raizes reais. Informe ao usuário e encerre o programa;
+#Se o delta calculado for igual a zero a equação possui apenas uma raiz real; informe-a ao usuário;
+#Se o delta for positivo, a equação possui duas raiz reais; informe-as ao usuário
+'''a = int(input("Valor A: "))
+if a == 0:
+  print("Não é uma equação do segundo grau")
+else:
+  b = int(input("Valor B: "))
+  c = int(input("Valor C: "))
+  delta = (b**2) - (4 * a * c)
+  equation1 = (-b + (delta ** (0.5 )))/(2*a)
+  equation2 = (-b - (delta ** (0.5 )))/(2*a)
+  if delta < 0:
+    print("Não possui raízes reais")
+  elif delta == 0:
+   print("Possui apenas uma raíz real. ", "Raiz 1: ", equation1, "Raiz 2: " ,equation2)
+  elif delta > 0:
+    print("Possui 2 raízes. ", "Raiz 1: ", equation1, "Raiz 2: ", equation2 )'''
+
+
+#Exercício 17:
+#Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
+'''ano = int(input("Ano: "))
+if ano %4 == 0:
+  print("Ano bissexto")
+else:
+  print("Não é bissexto")'''
+
+#Exercício 18:
+#Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida
+'''dia = int(input("Dia: "))
+mes = int(input("Mês: "))
+ano = int(input("Ano: "))
+if dia > 0 and dia < 31:
+  if mes > 0 and mes < 12:
+    if ano < 99:
+      print("Válido")
+    else:
+      print("Data inválida")
+  else:
+      print("Data inválida")
+else:
+      print("Data inválida")'''
