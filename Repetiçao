@@ -1,0 +1,207 @@
+#Exercício 1:
+#Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido
+'''n = int(input("Nota de 0 a 10: "))
+while n < 0 or n > 10:
+  n = int(input("Digite uma nota válida: "))'''
+
+#Exercício 2:
+#Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações
+'''user = input("Usuário: ")
+senha = input("Senha: ")
+while senha == user:
+  senha = input("A senha e o usuário não podem ser iguais: ")'''
+
+
+#Exercício 4:
+#Supondo que a população de um país A seja da ordem de 800 habitantes com uma taxa anual de crescimento de 3% e que a população de B seja 2000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento
+'''a = 800
+b = 2000
+growth_a = (800 * 0.03)
+growth_b = (2000 * 0.015)
+ano = 0
+while a <= b:
+  a = a + growth_a
+  b = b + growth_b
+  ano = ano+1
+print(ano)'''
+
+#Exercício 5:
+#Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. Valide a entrada e permita repetir a operação
+'''a = int(input("População A: "))
+b = int(input("População B: "))
+growth_a = float(input("Taxa de crescimendo da população a(decimal): "))
+growth_b = float(input("Taxa de crescimendo da população b(decimal): "))
+ano = 0
+while a <= b:
+  a = a + growth_a
+  b = b + growth_b
+  ano = ano+1
+print(ano)'''
+
+#Exercício 6:
+#Faça um programa que imprima na tela os números de 1 a 20, um abaixo do outro. Depois modifique o programa para que ele mostre os números um ao lado do outro.
+'''for x in range(1,21):
+  print(x)
+print(list(range(1,21)))'''
+
+#Exercício 7:
+#Faça um programa que leia 5 números e informe o maior número
+'''maior = -9999999999
+for i in range(5):
+  numero = int(input("Informe um número: "))
+  if numero > maior:
+    maior = numero
+print(maior)'''
+
+#Exercício 8:
+#Faça um programa que leia 5 números e informe a soma e a média dos números.
+''''cont = 0
+for x in range(5):
+  n = float(input("Número: "))
+  cont = cont + n
+print("Soma: ", cont, "Média: ", cont/5)'''
+
+#Exercício 9:
+#Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50
+'''for x in range (1,51,2):
+  print(x)'''
+
+#Exercício 10:
+#Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+'''n1 = int(input("Digite um número: "))
+n2 = int(input("Digite um número maior que o anterior: "))
+for x in range(n1,n2+1):
+  print(x)'''
+
+#Exercício 11:
+#Altere o programa anterior para mostrar no final a soma dos números
+'''cont = 0
+n1 = int(input("Digite um número: "))
+n2 = int(input("Digite um número maior que o anterior: "))
+for x in range(n1,n2+1):
+  cont = cont+ x
+print(cont)'''
+
+#Exercício 12:
+#Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada
+'''n = int(input("Digite um número de 1 a 10: "))
+for x in range(1,11):
+  print(n*x)'''
+
+#Exercício 13:
+#Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
+
+#OBS.:Nao sei pq usaria repetição aqui
+
+'''base = int(input("Número base: "))
+expoente = int(input("Expoente: "))
+print(base**expoente)'''
+
+#Exercício 14:
+#Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares
+'''cont1 = 0
+cont2 = 0
+for x in range(10):
+  n = int(input("Número inteiro: "))
+  if n %2 == 0:
+    cont1 = cont1+1
+  else:
+    cont2 = cont2+1
+print("Pares: ", cont1, "Ímpares: ", cont2)'''
+
+#Exercício 15:
+#A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,... Faça um programa capaz de gerar a série até o n−ésimo termo.
+'''n = int(input("Que termo deseja encontrar: "))
+ultimo=1
+penultimo=1
+if (n==1) or (n==2):
+    print("1")
+else:
+  cont=3
+  while cont <= n:
+    termo = ultimo + penultimo
+    penultimo = ultimo
+    ultimo = termo
+    cont = cont + 1
+    print(termo)'''
+
+#Exercício 16:
+#A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,... Faça um programa que gere a série até que o valor seja maior que 500
+'''ultimo = 1
+penultimo = 1
+cont=3
+while ultimo < 500:
+  termo = ultimo + penultimo
+  penultimo = ultimo
+  ultimo = termo
+  cont = cont + 1
+  print(termo)'''
+
+#Exercício 17:
+#Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120
+'''n = int(input("Número: "))
+for x in range(n,1,-1):
+  n = n * (x-1)
+  print(n)'''
+
+#Exercício 18:
+#Faça um programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a soma dos valores
+'''cont0 = -99999999999999999
+cont1 = 0
+cont2 = 999999999999999999
+c = int(input("Tamanho do conjunto: "))
+for x in range(c):
+  n = int(input("Número: "))
+  cont1 = cont1 + n
+  if n < cont2:
+    cont2 = n
+  while n > cont0:
+    cont0 = n
+print("O maior número é:", cont0,"O menor é:", cont2, "A soma do conjunto é:",  cont1)'''
+
+
+'''menor = 0
+maior = 0
+conjunto = int(input("Diga o tamanho do conjunto: "))
+valor = float(input("Número: "))
+menor = valor
+maior = valor
+for x in range(conjunto-1):
+  valor = float(input("Número: "))
+  if valor > maior:
+    maior = valor
+  elif valor < menor:
+    menor = valor
+print(menor, maior, menor+maior)'''
+
+
+#Exercício 19:
+#Altere o programa anterior para que ele aceite apenas números entre 0 e 1000
+
+#OBS: Tá errado e eu não tenho paciência pra consertar
+
+'''cont0 = -99999999999999999
+cont1 = 0
+cont2 = 999999999999999999
+c = int(input("Tamanho do conjunto: "))
+for x in range(c):
+  n = int(input("Número: "))
+  if n >= 0 and n <= 1000:
+    cont1 = cont1 + n
+    if n < cont2:
+      cont2 = n
+    while n > cont0:
+      cont0 = n
+    print("O maior número é:", cont0,"O menor é:", cont2, "A soma do conjunto é:",  cont1)
+  else:
+    print("Erro")'''
+  
+#Exercício 20:
+#Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120
+#Altere o programa de cálculo do fatorial, permitindo ao usuário calcular o fatorial várias vezes e limitando o fatorial a números inteiros positivos e menores que 16
+'''n = int(input("Número: "))
+while n > 0 and n <= 16:
+  for x in range(n,1,-1):
+    n = n*(x-1)
+  print(n)
+  n = int(input("Número: "))'''
